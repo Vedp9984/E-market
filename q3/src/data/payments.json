@@ -1,0 +1,20 @@
+[
+    {
+        "payment_id": "0c2d2ddf-2ce6-4141-9819-3863a793b750",
+        "order_id": "8a4e89c8-d648-471d-959a-74e030c07014",
+        "method": "Credit Card",
+        "status": "Completed"
+    },
+    {
+        "payment_id": "eb764a29-9eb9-4643-81a0-2b18c3336a6f",
+        "order_id": "80b2c7f1-b120-473b-8fe9-e353e139c5e3",
+        "method": "Bank Transfer",
+        "status": "Completed"
+    },
+    {
+        "payment_id": "4aa4fd7c-0342-4bf9-ad96-9b2565878993",
+        "order_id": "3be6c3e5-27f5-4dba-9688-446b1801dfd0",
+        "method": "Bank Transfer",
+        "status": "Completed"
+    }
+]

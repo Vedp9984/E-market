@@ -1,0 +1,133 @@
+{
+  "users": {
+    "customer1": {
+      "id": "59797b6a-6d36-4712-86b4-1390a1b4dade",
+      "username": "customer1",
+      "password": "pass123",
+      "role": "customer",
+      "name": "John Doe"
+    },
+    "manager1": {
+      "id": "85228c81-9e47-4b9e-95bf-f6374299afd0",
+      "username": "manager1",
+      "password": "pass123",
+      "role": "restaurant_manager",
+      "name": "Restaurant Manager"
+    },
+    "agent1": {
+      "id": "5ec6da25-e78d-4d85-89e0-3ea5d337106b",
+      "username": "agent1",
+      "password": "pass123",
+      "role": "delivery_agent",
+      "name": "Delivery Agent 1"
+    },
+    "admin1": {
+      "id": "8f566934-3858-472c-b1bd-e4bcdd029198",
+      "username": "admin1",
+      "password": "pass123",
+      "role": "admin",
+      "name": "System Admin"
+    },
+    "ved_maurya": {
+      "id": "807e39cf-cd14-4616-ba5c-b9be957152dd",
+      "username": "ved_maurya",
+      "password": "Vedp9565@",
+      "role": "customer",
+      "name": "VED PRAKASH MAURYA"
+    },
+    "surendra": {
+      "id": "b9ceb780-4fe4-4088-b823-8d9da7b433f7",
+      "username": "surendra",
+      "password": "1234",
+      "role": "customer",
+      "name": "vundela surendra"
+    }
+  },
+  "menu_items": {
+    "838926df-bb8c-4db2-b96e-52b4d795a760": {
+      "id": "838926df-bb8c-4db2-b96e-52b4d795a760",
+      "name": "Margherita Pizza",
+      "description": "Classic cheese and tomato pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "50556288-9379-48d2-8952-9e7a71e17114": {
+      "id": "50556288-9379-48d2-8952-9e7a71e17114",
+      "name": "Pepperoni Pizza",
+      "description": "Pizza with pepperoni toppings",
+      "price": 14.99,
+      "category": "Pizza"
+    },
+    "8d1103dd-b356-4bb4-abcd-cfa49d25bd82": {
+      "id": "8d1103dd-b356-4bb4-abcd-cfa49d25bd82",
+      "name": "Chicken Burger",
+      "description": "Grilled chicken burger with lettuce and mayo",
+      "price": 9.99,
+      "category": "Burger"
+    },
+    "ae978b77-80f8-444d-b323-9e8dbdae6fa3": {
+      "id": "ae978b77-80f8-444d-b323-9e8dbdae6fa3",
+      "name": "Vegetable Biryani",
+      "description": "Fragrant rice dish with mixed vegetables",
+      "price": 10.99,
+      "category": "Main"
+    },
+    "c39f224a-d5ba-4606-95fe-2d3b194f900d": {
+      "id": "c39f224a-d5ba-4606-95fe-2d3b194f900d",
+      "name": "Chocolate Brownie",
+      "description": "Rich chocolate brownie with ice cream",
+      "price": 6.99,
+      "category": "Dessert"
+    }
+  },
+  "orders": {
+    "236896aa-b87f-4ab0-b286-a56b9e6446ff": {
+      "id": "236896aa-b87f-4ab0-b286-a56b9e6446ff",
+      "customer_id": "807e39cf-cd14-4616-ba5c-b9be957152dd",
+      "items": [
+        {
+          "item_id": "8d1103dd-b356-4bb4-abcd-cfa49d25bd82",
+          "name": "Chicken Burger",
+          "price": 9.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "IIIT HYDERABAD",
+      "status": "placed",
+      "created_at": "2025-03-07T09:36:46.577857",
+      "updated_at": "2025-03-07T09:36:46.577857",
+      "estimated_delivery_time": 1741324186.577934,
+      "delivery_agent_id": "5ec6da25-e78d-4d85-89e0-3ea5d337106b",
+      "total_amount": 9.99
+    },
+    "0e05f2cd-69a9-4e6b-8e48-483bb2c0189a": {
+      "id": "0e05f2cd-69a9-4e6b-8e48-483bb2c0189a",
+      "customer_id": "b9ceb780-4fe4-4088-b823-8d9da7b433f7",
+      "items": [
+        {
+          "item_id": "c39f224a-d5ba-4606-95fe-2d3b194f900d",
+          "name": "Chocolate Brownie",
+          "price": 6.99,
+          "quantity": 2
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "bakul nivas",
+      "status": "placed",
+      "created_at": "2025-03-08T12:11:58.777367",
+      "updated_at": "2025-03-08T12:11:58.777367",
+      "estimated_delivery_time": 1741419118.77744,
+      "delivery_agent_id": null,
+      "total_amount": 13.98
+    }
+  },
+  "delivery_agents": {
+    "5ec6da25-e78d-4d85-89e0-3ea5d337106b": {
+      "id": "5ec6da25-e78d-4d85-89e0-3ea5d337106b",
+      "name": "Delivery Agent 1",
+      "status": "busy",
+      "current_order": "236896aa-b87f-4ab0-b286-a56b9e6446ff"
+    }
+  }
+}

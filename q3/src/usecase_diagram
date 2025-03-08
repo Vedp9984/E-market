@@ -1,0 +1,34 @@
+// DollMart Use Case Diagram
+digraph {
+	Customer [shape=actor]
+	Admin [shape=actor]
+	RetailStore [shape=actor]
+	Register [shape=ellipse]
+	Login [shape=ellipse]
+	"Search Products" [shape=ellipse]
+	"Place Order" [shape=ellipse]
+	"View Order History" [shape=ellipse]
+	"Manage Products" [shape=ellipse]
+	"View All Orders" [shape=ellipse]
+	"Manage Deliveries" [shape=ellipse]
+	"Process Payment" [shape=ellipse]
+	"Track Delivery" [shape=ellipse]
+	Logout [shape=ellipse]
+	Customer -> Register
+	RetailStore -> Register
+	Customer -> Login
+	Admin -> Login
+	RetailStore -> Login
+	Customer -> "Search Products"
+	RetailStore -> "Search Products"
+	Customer -> "Place Order"
+	Customer -> "View Order History"
+	Admin -> "Manage Products"
+	Admin -> "View All Orders"
+	Admin -> "Manage Deliveries"
+	Customer -> "Process Payment"
+	Customer -> "Track Delivery"
+	Customer -> Logout
+	Admin -> Logout
+	RetailStore -> Logout
+}

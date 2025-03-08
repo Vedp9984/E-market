@@ -1,0 +1,57 @@
+[
+    {
+        "order_id": "8a4e89c8-d648-471d-959a-74e030c07014",
+        "customer_id": "e2f5efeb-e76c-4a06-8253-eb14746689bb",
+        "items": [
+            {
+                "product_id": "f09bd217-ad6b-44c0-b92f-7836793f6a1e",
+                "quantity": 2
+            }
+        ],
+        "payment_method": "Credit Card",
+        "status": "Confirmed",
+        "total_price": 24.0,
+        "date": "2025-03-08 14:44:39",
+        "discount_applied": null,
+        "payment_id": "0c2d2ddf-2ce6-4141-9819-3863a793b750",
+        "delivery_id": "74db5971-ddb0-4c26-bc89-91ea555ef034"
+    },
+    {
+        "order_id": "80b2c7f1-b120-473b-8fe9-e353e139c5e3",
+        "customer_id": "aed89bea-8db6-4641-af94-ecd06e5ee9a5",
+        "items": [
+            {
+                "product_id": "f09bd217-ad6b-44c0-b92f-7836793f6a1e",
+                "quantity": 3
+            }
+        ],
+        "payment_method": "Bank Transfer",
+        "status": "Delivered",
+        "total_price": 36.0,
+        "date": "2025-03-08 14:59:45",
+        "discount_applied": null,
+        "payment_id": "eb764a29-9eb9-4643-81a0-2b18c3336a6f",
+        "delivery_id": "5ed5a11f-634b-4ca4-be39-5b99955564a2"
+    },
+    {
+        "order_id": "3be6c3e5-27f5-4dba-9688-446b1801dfd0",
+        "customer_id": "e2f5efeb-e76c-4a06-8253-eb14746689bb",
+        "items": [
+            {
+                "product_id": "143a49bb-6415-497e-94bf-8604afe72314",
+                "quantity": 20
+            },
+            {
+                "product_id": "f09bd217-ad6b-44c0-b92f-7836793f6a1e",
+                "quantity": 2
+            }
+        ],
+        "payment_method": "Bank Transfer",
+        "status": "Confirmed",
+        "total_price": 264.0,
+        "date": "2025-03-08 16:01:38",
+        "discount_applied": null,
+        "payment_id": "4aa4fd7c-0342-4bf9-ad96-9b2565878993",
+        "delivery_id": "0e394844-8097-42c4-b3e4-09fe5eff6993"
+    }
+]

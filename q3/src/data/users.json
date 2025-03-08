@@ -1,0 +1,71 @@
+[
+    {
+        "user_id": "9ab59169-1199-4e0a-93f0-72070b54f08a",
+        "name": "Admin",
+        "email": "admin@dollmart.com",
+        "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+        "type": "Admin"
+    },
+    {
+        "user_id": "da988688-e2a6-427c-bf09-f38efeee9cb9",
+        "name": "Ved",
+        "email": "mvedp@",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "type": "RetailStore",
+        "order_history": [],
+        "store_name": "IIITH",
+        "business_id": "710ff6c6-3c5f-4666-acb1-bba401bf2cc9"
+    },
+    {
+        "user_id": "e2f5efeb-e76c-4a06-8253-eb14746689bb",
+        "name": "Ved Prakash",
+        "email": "ved.maurya@",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "type": "Customer",
+        "order_history": [
+            "8a4e89c8-d648-471d-959a-74e030c07014",
+            "3be6c3e5-27f5-4dba-9688-446b1801dfd0"
+        ]
+    },
+    {
+        "user_id": "aed89bea-8db6-4641-af94-ecd06e5ee9a5",
+        "name": "Mayank",
+        "email": "munu@",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "type": "Customer",
+        "order_history": [
+            "80b2c7f1-b120-473b-8fe9-e353e139c5e3"
+        ]
+    },
+    {
+        "user_id": "d1feaa39-cf96-4c50-9072-dfb08d9b62b8",
+        "name": "ved",
+        "email": "ved@",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "type": "RetailStore",
+        "order_history": [],
+        "store_name": "iiith",
+        "business_id": "c8fbedc2-7252-44c2-9cbb-36c655127faf"
+    },
+    {
+        "user_id": "ace6b9fb-0501-49cd-b7d6-7af92a24540e",
+        "name": "Ved",
+        "email": "v@",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "type": "RetailStore",
+        "order_history": [],
+        "store_name": "R&d",
+        "business_id": "e168b964-5d75-432b-a2da-816f5caa4e44"
+    },
+    {
+        "user_id": "b6d44199-3464-45fc-8fc2-fbf9a30b2376",
+        "name": "aryanShri",
+        "email": "shri@",
+        "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "type": "RetailStore",
+        "order_history": [],
+        "store_name": "chatbhandar",
+        "business_id": "6ac25030-f39a-4fe9-816c-1f8de1b1246a"
+    }
+ 
+]

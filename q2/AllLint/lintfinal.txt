@@ -1,0 +1,310 @@
+************* Module AllLint
+__init__.py:1:0: C0103: Module name "AllLint" doesn't conform to snake_case naming style (invalid-name)
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:27:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:33:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:49:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:59:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:75:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:80:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:89:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:100:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:109:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:114:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:119:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:123:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:125:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:141:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:156:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:170:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:172:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:175:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:183:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:199:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:211:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:213:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:216:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:219:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:228:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:234:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:244:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:247:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:251:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:255:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:258:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:266:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:269:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:272:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:275:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:279:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:284:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:290:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:293:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:297:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:300:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:302:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:307:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:12:0: E0401: Unable to import 'colors' (import-error)
+gobbletfinal.py:13:0: E0401: Unable to import 'constants' (import-error)
+gobbletfinal.py:17:0: E0401: Unable to import 'UI.gameUI' (import-error)
+gobbletfinal.py:18:0: E0401: Unable to import 'UI.board' (import-error)
+gobbletfinal.py:19:0: E0401: Unable to import 'UI.piece' (import-error)
+gobbletfinal.py:20:0: E0401: Unable to import 'player' (import-error)
+gobbletfinal.py:23:0: E1101: Module 'pygame' has no 'init' member (no-member)
+gobbletfinal.py:25:0: R0902: Too many instance attributes (12/7) (too-many-instance-attributes)
+gobbletfinal.py:60:4: R0912: Too many branches (17/12) (too-many-branches)
+gobbletfinal.py:157:4: R0911: Too many return statements (7/6) (too-many-return-statements)
+gobbletfinal.py:232:16: E1101: Module 'pygame' has no 'quit' member (no-member)
+gobbletfinal.py:277:29: E1101: Module 'pygame' has no 'QUIT' member (no-member)
+gobbletfinal.py:280:29: E1101: Module 'pygame' has no 'MOUSEBUTTONDOWN' member (no-member)
+gobbletfinal.py:285:29: E1101: Module 'pygame' has no 'MOUSEBUTTONUP' member (no-member)
+gobbletfinal.py:303:4: E1101: Module 'pygame' has no 'quit' member (no-member)
+gobbletfinal.py:8:0: W0611: Unused import math (unused-import)
+gobbletfinal.py:12:0: W0611: Unused BLACK imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused RED imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused BLUE imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused GREEN imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused GRAY imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused LIGHT_GRAY imported from colors (unused-import)
+gobbletfinal.py:13:0: W0611: Unused PIECE_COLORS imported from constants (unused-import)
+************* Module AllLint.colors
+colors.py:11:0: C0305: Trailing newlines (trailing-newlines)
+colors.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module AllLint.constants
+constants.py:2:25: C0303: Trailing whitespace (trailing-whitespace)
+constants.py:4:15: C0303: Trailing whitespace (trailing-whitespace)
+constants.py:7:26: C0303: Trailing whitespace (trailing-whitespace)
+constants.py:8:0: C0305: Trailing newlines (trailing-newlines)
+constants.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module AllLint.player
+player.py:7:0: C0303: Trailing whitespace (trailing-whitespace)
+player.py:10:0: C0303: Trailing whitespace (trailing-whitespace)
+player.py:13:0: C0303: Trailing whitespace (trailing-whitespace)
+player.py:20:0: C0304: Final newline missing (missing-final-newline)
+player.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+player.py:1:0: E0401: Unable to import 'constants' (import-error)
+player.py:1:0: W0401: Wildcard import constants (wildcard-import)
+player.py:2:0: E0401: Unable to import 'UI.piece' (import-error)
+player.py:3:0: C0115: Missing class docstring (missing-class-docstring)
+player.py:6:53: E0602: Undefined variable 'PIECE_SIZES' (undefined-variable)
+player.py:8:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:11:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:14:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:16:33: E0602: Undefined variable 'SIDE_GRID_COLS' (undefined-variable)
+player.py:17:25: E0602: Undefined variable 'SIDE_BOX_WIDTH' (undefined-variable)
+
+-----------------------------------
+Your code has been rated at 2.07/10
+
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:27:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:33:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:49:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:59:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:75:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:80:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:89:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:100:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:109:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:114:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:119:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:123:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:125:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:141:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:156:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:170:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:172:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:175:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:183:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:199:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:211:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:213:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:216:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:219:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:228:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:234:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:244:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:247:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:251:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:255:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:258:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:266:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:269:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:272:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:275:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:279:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:284:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:290:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:293:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:297:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:300:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:302:0: C0303: Trailing whitespace (trailing-whitespace)
+gobbletfinal.py:307:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:12:0: E0401: Unable to import 'colors' (import-error)
+gobbletfinal.py:13:0: E0401: Unable to import 'constants' (import-error)
+gobbletfinal.py:17:0: E0401: Unable to import 'UI.gameUI' (import-error)
+gobbletfinal.py:18:0: E0401: Unable to import 'UI.board' (import-error)
+gobbletfinal.py:19:0: E0401: Unable to import 'UI.piece' (import-error)
+gobbletfinal.py:20:0: E0401: Unable to import 'player' (import-error)
+gobbletfinal.py:23:0: E1101: Module 'pygame' has no 'init' member (no-member)
+gobbletfinal.py:25:0: R0902: Too many instance attributes (12/7) (too-many-instance-attributes)
+gobbletfinal.py:60:4: R0912: Too many branches (17/12) (too-many-branches)
+gobbletfinal.py:157:4: R0911: Too many return statements (7/6) (too-many-return-statements)
+gobbletfinal.py:232:16: E1101: Module 'pygame' has no 'quit' member (no-member)
+gobbletfinal.py:277:29: E1101: Module 'pygame' has no 'QUIT' member (no-member)
+gobbletfinal.py:280:29: E1101: Module 'pygame' has no 'MOUSEBUTTONDOWN' member (no-member)
+gobbletfinal.py:285:29: E1101: Module 'pygame' has no 'MOUSEBUTTONUP' member (no-member)
+gobbletfinal.py:303:4: E1101: Module 'pygame' has no 'quit' member (no-member)
+gobbletfinal.py:8:0: W0611: Unused import math (unused-import)
+gobbletfinal.py:12:0: W0611: Unused BLACK imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused RED imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused BLUE imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused GREEN imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused GRAY imported from colors (unused-import)
+gobbletfinal.py:12:0: W0611: Unused LIGHT_GRAY imported from colors (unused-import)
+gobbletfinal.py:13:0: W0611: Unused PIECE_COLORS imported from constants (unused-import)
+
+-----------------------------------
+Your code has been rated at 3.13/10
+
+--------------------------------------------------.pylintrc file in your project root directory:and removing the whitespace from code ---->
+fixes the import errors by adding your project directory to Python's path when pylint runs. Now pylint can find your local modules like colors, constants, and UI.gameUI.
+fixes the line-too-long warnings by increasing the allowed line length from the default 79 to 100 characters.
+
+
+
+ ✘ � ved_maurya � � master - � pylint gobbletfinal.py                                                                                                  !11972
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:15:0: C0301: Line too long (102/100) (line-too-long)
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:14:0: E0401: Unable to import 'colors' (import-error)
+gobbletfinal.py:15:0: E0401: Unable to import 'constants' (import-error)
+gobbletfinal.py:16:0: E0401: Unable to import 'UI.gameUI' (import-error)
+gobbletfinal.py:17:0: E0401: Unable to import 'UI.board' (import-error)
+gobbletfinal.py:18:0: E0401: Unable to import 'UI.piece' (import-error)
+gobbletfinal.py:19:0: E0401: Unable to import 'player' (import-error)
+gobbletfinal.py:29:0: R0902: Too many instance attributes (12/7) (too-many-instance-attributes)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:14:0: W0611: Unused WHITE imported from colors (unused-import)
+gobbletfinal.py:15:0: W0611: Unused PIECE_SIZES imported from constants (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 8.20/10 (previous run: 3.13/10, +5.07)
+
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:15:0: C0301: Line too long (102/100) (line-too-long)
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:14:0: W0611: Unused WHITE imported from colors (unused-import)
+gobbletfinal.py:15:0: W0611: Unused PIECE_SIZES imported from constants (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 9.71/10 (previous run: 8.20/10, +1.51)
+
+************* Module AllLint
+__init__.py:1:0: C0103: Module name "AllLint" doesn't conform to snake_case naming style (invalid-name)
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:15:0: C0301: Line too long (102/100) (line-too-long)
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:14:0: W0611: Unused WHITE imported from colors (unused-import)
+gobbletfinal.py:15:0: W0611: Unused PIECE_SIZES imported from constants (unused-import)
+************* Module AllLint.constants
+constants.py:8:15: C0303: Trailing whitespace (trailing-whitespace)
+************* Module AllLint.player
+player.py:7:0: C0303: Trailing whitespace (trailing-whitespace)
+player.py:10:0: C0303: Trailing whitespace (trailing-whitespace)
+player.py:13:0: C0303: Trailing whitespace (trailing-whitespace)
+player.py:20:0: C0304: Final newline missing (missing-final-newline)
+player.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+player.py:1:0: W0401: Wildcard import constants (wildcard-import)
+player.py:3:0: C0115: Missing class docstring (missing-class-docstring)
+player.py:8:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:11:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:14:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:1:0: W0614: Unused import(s) WIDTH, HEIGHT, ROWS, COLS, CELL_SIZE and SIDE_GRID_ROWS from wildcard import of constants (unused-wildcard-import)
+
+------------------------------------------------------------------
+Your code has been rated at 9.20/10 (previous run: 7.48/10, +1.72)
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Removed THE whitespaces of some other files which were imported>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+************* Module AllLint
+__init__.py:1:0: C0103: Module name "AllLint" doesn't conform to snake_case naming style (invalid-name)
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:15:0: C0301: Line too long (102/100) (line-too-long)
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:14:0: W0611: Unused WHITE imported from colors (unused-import)
+gobbletfinal.py:15:0: W0611: Unused PIECE_SIZES imported from constants (unused-import)
+************* Module AllLint.player
+player.py:20:0: C0304: Final newline missing (missing-final-newline)
+player.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+player.py:1:0: W0401: Wildcard import constants (wildcard-import)
+player.py:3:0: C0115: Missing class docstring (missing-class-docstring)
+player.py:8:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:11:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:14:4: C0116: Missing function or method docstring (missing-function-docstring)
+player.py:1:0: W0614: Unused import(s) WIDTH, HEIGHT, ROWS, COLS, CELL_SIZE and SIDE_GRID_ROWS from wildcard import of constants (unused-wildcard-import)
+
+
+Your code has been rated at 9.37/10 (previous run: 9.20/10, +0.17)
+
+
+
+
+
+--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<removed unsed import from player .and managed some other insruction given above>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+************* Module AllLint
+__init__.py:1:0: C0103: Module name "AllLint" doesn't conform to snake_case naming style (invalid-name)
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:15:0: C0301: Line too long (102/100) (line-too-long)
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:14:0: W0611: Unused WHITE imported from colors (unused-import)
+gobbletfinal.py:15:0: W0611: Unused PIECE_SIZES imported from constants (unused-import)
+************* Module AllLint.player
+player.py:47:0: C0304: Final newline missing (missing-final-newline)
+player.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 9.62/10 (previous run: 9.62/10, +0.00)
+
+
+************* Module AllLint
+__init__.py:1:0: C0103: Module name "AllLint" doesn't conform to snake_case naming style (invalid-name)
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:15:0: C0301: Line too long (102/100) (line-too-long)
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:14:0: W0611: Unused WHITE imported from colors (unused-import)
+gobbletfinal.py:15:0: W0611: Unused PIECE_SIZES imported from constants (unused-import)
+************* Module AllLint.player
+player.py:53:0: C0304: Final newline missing (missing-final-newline)
+
+------------------------------------------------------------------
+Your code has been rated at 9.66/10 (previous run: 9.62/10, +0.04)
+
+        <<<<<<<<<<<<<<<<<<<<<removed the unused imported>>>>>
+
+************* Module AllLint
+__init__.py:1:0: C0103: Module name "AllLint" doesn't conform to snake_case naming style (invalid-name)
+************* Module AllLint.gobbletfinal
+gobbletfinal.py:298:0: C0304: Final newline missing (missing-final-newline)
+gobbletfinal.py:166:4: R0913: Too many arguments (7/5) (too-many-arguments)
+gobbletfinal.py:182:4: R0913: Too many arguments (7/5) (too-many-arguments)
+************* Module AllLint.player
+player.py:53:0: C0304: Final newline missing (missing-final-newline)
+
+------------------------------------------------------------------
+Your code has been rated at 9.79/10 (previous run: 9.66/10, +0.13)
+
