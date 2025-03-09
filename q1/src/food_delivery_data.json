@@ -1,79 +1,93 @@
 {
   "users": {
     "customer1": {
-      "id": "59797b6a-6d36-4712-86b4-1390a1b4dade",
+      "id": "290b31ff-7933-4ae4-8f96-1a55e8830613",
       "username": "customer1",
       "password": "pass123",
       "role": "customer",
       "name": "John Doe"
     },
     "manager1": {
-      "id": "85228c81-9e47-4b9e-95bf-f6374299afd0",
+      "id": "6c68380c-571c-41b5-ab42-704dcff3900c",
       "username": "manager1",
       "password": "pass123",
       "role": "restaurant_manager",
       "name": "Restaurant Manager"
     },
     "agent1": {
-      "id": "5ec6da25-e78d-4d85-89e0-3ea5d337106b",
+      "id": "1b0f828f-14df-4ec0-817d-c263750c6cd2",
       "username": "agent1",
       "password": "pass123",
       "role": "delivery_agent",
       "name": "Delivery Agent 1"
     },
     "admin1": {
-      "id": "8f566934-3858-472c-b1bd-e4bcdd029198",
+      "id": "98027adf-2a70-4645-a825-7226955da74f",
       "username": "admin1",
       "password": "pass123",
       "role": "admin",
       "name": "System Admin"
     },
-    "ved_maurya": {
-      "id": "807e39cf-cd14-4616-ba5c-b9be957152dd",
-      "username": "ved_maurya",
-      "password": "Vedp9565@",
+    "Ved": {
+      "id": "655af6d1-c06b-411a-a61b-5c56e8aa23b8",
+      "username": "Ved",
+      "password": "Ved",
       "role": "customer",
-      "name": "VED PRAKASH MAURYA"
+      "name": "Ved prakash"
     },
-    "surendra": {
-      "id": "b9ceb780-4fe4-4088-b823-8d9da7b433f7",
-      "username": "surendra",
+    "ram": {
+      "id": "91d7d570-d2f4-49a9-bef1-da7d204c3fe8",
+      "username": "ram",
+      "password": "123",
+      "role": "customer",
+      "name": "ramnarayan"
+    },
+    "prakash": {
+      "id": "7e327ca9-8851-45af-a48a-240c95fec968",
+      "username": "prakash",
       "password": "1234",
       "role": "customer",
-      "name": "vundela surendra"
+      "name": "Ved Prakash Maurya"
+    },
+    "sajiv": {
+      "id": "9adbe745-7f68-4ad3-a63b-2a91e02f4ebd",
+      "username": "sajiv",
+      "password": "1234",
+      "role": "delivery_agent",
+      "name": "sajiv singh"
     }
   },
   "menu_items": {
-    "838926df-bb8c-4db2-b96e-52b4d795a760": {
-      "id": "838926df-bb8c-4db2-b96e-52b4d795a760",
+    "c123fdb4-17c3-488a-b7db-ab8fff7cb43f": {
+      "id": "c123fdb4-17c3-488a-b7db-ab8fff7cb43f",
       "name": "Margherita Pizza",
       "description": "Classic cheese and tomato pizza",
       "price": 12.99,
       "category": "Pizza"
     },
-    "50556288-9379-48d2-8952-9e7a71e17114": {
-      "id": "50556288-9379-48d2-8952-9e7a71e17114",
+    "8b5ab429-928d-46dd-936a-ddfa43275a36": {
+      "id": "8b5ab429-928d-46dd-936a-ddfa43275a36",
       "name": "Pepperoni Pizza",
       "description": "Pizza with pepperoni toppings",
       "price": 14.99,
       "category": "Pizza"
     },
-    "8d1103dd-b356-4bb4-abcd-cfa49d25bd82": {
-      "id": "8d1103dd-b356-4bb4-abcd-cfa49d25bd82",
+    "aed84555-bd1c-42a2-b750-cc0cb9ba7597": {
+      "id": "aed84555-bd1c-42a2-b750-cc0cb9ba7597",
       "name": "Chicken Burger",
       "description": "Grilled chicken burger with lettuce and mayo",
       "price": 9.99,
       "category": "Burger"
     },
-    "ae978b77-80f8-444d-b323-9e8dbdae6fa3": {
-      "id": "ae978b77-80f8-444d-b323-9e8dbdae6fa3",
+    "c9d18977-227e-4d8c-a60a-2259e5a3f6bc": {
+      "id": "c9d18977-227e-4d8c-a60a-2259e5a3f6bc",
       "name": "Vegetable Biryani",
       "description": "Fragrant rice dish with mixed vegetables",
       "price": 10.99,
       "category": "Main"
     },
-    "c39f224a-d5ba-4606-95fe-2d3b194f900d": {
-      "id": "c39f224a-d5ba-4606-95fe-2d3b194f900d",
+    "2ff7f9b4-b39c-4e19-b9ae-bd96a1ec1b0c": {
+      "id": "2ff7f9b4-b39c-4e19-b9ae-bd96a1ec1b0c",
       "name": "Chocolate Brownie",
       "description": "Rich chocolate brownie with ice cream",
       "price": 6.99,
@@ -81,53 +95,59 @@
     }
   },
   "orders": {
-    "236896aa-b87f-4ab0-b286-a56b9e6446ff": {
-      "id": "236896aa-b87f-4ab0-b286-a56b9e6446ff",
-      "customer_id": "807e39cf-cd14-4616-ba5c-b9be957152dd",
+    "2f3897a4-c99c-439c-93a0-040498693ba9": {
+      "id": "2f3897a4-c99c-439c-93a0-040498693ba9",
+      "customer_id": "655af6d1-c06b-411a-a61b-5c56e8aa23b8",
       "items": [
         {
-          "item_id": "8d1103dd-b356-4bb4-abcd-cfa49d25bd82",
-          "name": "Chicken Burger",
-          "price": 9.99,
-          "quantity": 1
-        }
-      ],
-      "order_type": "delivery",
-      "delivery_address": "IIIT HYDERABAD",
-      "status": "placed",
-      "created_at": "2025-03-07T09:36:46.577857",
-      "updated_at": "2025-03-07T09:36:46.577857",
-      "estimated_delivery_time": 1741324186.577934,
-      "delivery_agent_id": "5ec6da25-e78d-4d85-89e0-3ea5d337106b",
-      "total_amount": 9.99
-    },
-    "0e05f2cd-69a9-4e6b-8e48-483bb2c0189a": {
-      "id": "0e05f2cd-69a9-4e6b-8e48-483bb2c0189a",
-      "customer_id": "b9ceb780-4fe4-4088-b823-8d9da7b433f7",
-      "items": [
-        {
-          "item_id": "c39f224a-d5ba-4606-95fe-2d3b194f900d",
+          "item_id": "2ff7f9b4-b39c-4e19-b9ae-bd96a1ec1b0c",
           "name": "Chocolate Brownie",
           "price": 6.99,
-          "quantity": 2
+          "quantity": 10
         }
       ],
       "order_type": "delivery",
       "delivery_address": "bakul nivas",
       "status": "placed",
-      "created_at": "2025-03-08T12:11:58.777367",
-      "updated_at": "2025-03-08T12:11:58.777367",
-      "estimated_delivery_time": 1741419118.77744,
+      "created_at": "2025-03-09T13:51:17.209095",
+      "updated_at": "2025-03-09T13:51:17.209095",
+      "estimated_delivery_time": 1741511597.2092,
+      "delivery_agent_id": "1b0f828f-14df-4ec0-817d-c263750c6cd2",
+      "total_amount": 69.9
+    },
+    "32d70235-5879-4f06-8b72-8e0064f4b117": {
+      "id": "32d70235-5879-4f06-8b72-8e0064f4b117",
+      "customer_id": "7e327ca9-8851-45af-a48a-240c95fec968",
+      "items": [
+        {
+          "item_id": "c9d18977-227e-4d8c-a60a-2259e5a3f6bc",
+          "name": "Vegetable Biryani",
+          "price": 10.99,
+          "quantity": 2
+        }
+      ],
+      "order_type": "takeaway",
+      "delivery_address": null,
+      "status": "placed",
+      "created_at": "2025-03-09T21:21:47.934855",
+      "updated_at": "2025-03-09T21:21:47.934855",
+      "estimated_delivery_time": 1741537187.934903,
       "delivery_agent_id": null,
-      "total_amount": 13.98
+      "total_amount": 21.98
     }
   },
   "delivery_agents": {
-    "5ec6da25-e78d-4d85-89e0-3ea5d337106b": {
-      "id": "5ec6da25-e78d-4d85-89e0-3ea5d337106b",
+    "1b0f828f-14df-4ec0-817d-c263750c6cd2": {
+      "id": "1b0f828f-14df-4ec0-817d-c263750c6cd2",
       "name": "Delivery Agent 1",
       "status": "busy",
-      "current_order": "236896aa-b87f-4ab0-b286-a56b9e6446ff"
+      "current_order": "2f3897a4-c99c-439c-93a0-040498693ba9"
+    },
+    "9adbe745-7f68-4ad3-a63b-2a91e02f4ebd": {
+      "id": "9adbe745-7f68-4ad3-a63b-2a91e02f4ebd",
+      "name": "sajiv singh",
+      "status": "available",
+      "current_order": null
     }
   }
 }
