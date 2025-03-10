@@ -307,10 +307,13 @@ The system follows a layered architecture:
 
 ### 8.1 Software Requirements
 
-- Operating System: Windows, macOS, or Linux.
-- Python 3.8 or higher.
-- Required Python libraries: `json`, `os`, `time`, `uuid`, `datetime`, `enum`, `random`.
-- Git for version control.
+## Software Choices
+# Programming Language
+Python: Chosen for its simplicity, readability, and extensive library support. Python's dynamic typing and interpreted nature make it ideal for rapid development and prototyping.
+# Database
+Sqlite
+# Version Control
+Git: Used for version control to manage changes to the codebase. Git provides a robust system for tracking changes, collaborating with other developers, and maintaining a history of the project.
 
 ## 9. Users Profile
 
@@ -346,5 +349,47 @@ The system follows a layered architecture:
 - Limited scalability with file-based storage.
 
 
+
+
+
+
 # assumption for 3rd question -
 1. I have not implemented concurrent access as it was not mention so I am using json for datastorage
+
+# Assumptions:
+# #File-based Storage ##: JSON files are used for data persistence since concurrent access was not specified as a requirement.
+Data Model: Simple object-relational mapping between classes and stored data.
+Data Integrity: Basic validation is implemented but without complex constraints or referential integrity checks.
+No Concurrency: The system does not handle concurrent data modifications from multiple users.
+Data Persistence: All data (users, menu items, orders) persists between application runs.
+General Assumptions:
+Scalability: The system is designed for a small to medium-sized restaurant rather than enterprise-scale operations.
+Payment Processing: Payment is simulated rather than integrated with real payment gateways.
+Location Services: Delivery addresses are stored as text rather than geocoded coordinates.
+Error Handling: Basic error handling with informative messages rather than comprehensive error management.
+Security: Role-based access control is implemented but without advanced security features.
+Design Choices:
+Class Division: Classes are organized by domain entities (User, MenuItem, Order) and managers (UserManager, MenuManager, OrderManager) to separate data from operations.
+Singleton Pattern: Used for DataStore and manager classes to ensure consistent access to data.
+Inheritance: User role classes (Customer, RestaurantManager, Admin) inherit from the base User class to reuse authentication logic.
+Factory Methods: from_dict and to_dict methods facilitate serialization and deserialization of objects.
+Command Pattern: Menu-driven interface uses a command pattern to map user choices to actions.
+Technology Choices:
+Python: Chosen for readability, sitmuplicnity, and extensive standard library support.
+JSON: Selected for data storage du to itssimplicity nd nwativ support in Python.
+Pytest: Used for testing due to its fixture system a nd comprehensive assertions.
+UUID: Used for generating untique identifie rs for oentities. 
+Enum: Used for clear representation of states and types (OrderStahtus, UserRoloe).
+
+### how to run 
+# q1
+ python src/app.py
+ python testcases/test.py
+
+ # q2
+ python gobblet.py
+
+ # q3
+ python dollmart_main.py
+
+ python -m pytest test.py 

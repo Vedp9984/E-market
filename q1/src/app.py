@@ -1,6 +1,7 @@
 
 from classes import User, UserRole, MenuItem, Order, OrderStatus, OrderType, UserManager,DataStore,MenuManager,OrderManager,DeliveryManager,Order
 from datetime import datetime, timezone
+import uuid
 # CLI Interface
 class FoodDeliveryApp:
     def __init__(self):
