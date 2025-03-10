@@ -16,5 +16,29 @@
         "order_id": "3be6c3e5-27f5-4dba-9688-446b1801dfd0",
         "method": "Bank Transfer",
         "status": "Completed"
+    },
+    {
+        "payment_id": "53c4dd68-7615-49d8-b355-a22a2e0b5176",
+        "order_id": "af81acbd-26cf-4e4d-bd70-e7677328eb89",
+        "method": "Credit Card",
+        "status": "Completed"
+    },
+    {
+        "payment_id": "20f81f77-f73c-4a6d-8199-f72f06cc9a43",
+        "order_id": "b617a5a8-ca55-4763-86d5-069f9e9ccc7f",
+        "method": "Credit Card",
+        "status": "Completed"
+    },
+    {
+        "payment_id": "55e58ca2-972e-4180-b379-f90600a61741",
+        "order_id": "b1df1d95-e395-4de7-9563-a9a53c99ab77",
+        "method": "Credit Card",
+        "status": "Completed"
+    },
+    {
+        "payment_id": "186edab6-d06e-4dc3-a9e5-7c7d09ab28ad",
+        "order_id": "d2850c21-f390-4f19-bf90-46aa64c294db",
+        "method": "Credit Card",
+        "status": "Completed"
     }
 ]

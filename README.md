@@ -15,8 +15,9 @@ The Food Delivery System is a comprehensive platform that connects customers, re
 
 ### 3.1 User Management
 
-- User registration with role-based access control.
+- User registration with role-based access control(manager,customer,system admin,deliveryAgent)
 - Authentication system with username/password.
+- show them system menu according to thier role
 
 
 ### 3.2 Menu Management
@@ -343,3 +344,10 @@ The system follows a layered architecture:
 - CLI-based interface limits user experience.
 - No real-time push notifications.
 - Limited scalability with file-based storage.
+
+
+
+
+
+# assumption for 3rd question -
+1. I have not implemented concurrent access as it was not mention so I am using json for datastorage

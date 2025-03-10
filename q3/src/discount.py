@@ -1,4 +1,5 @@
 from typing import List, Dict
+import uuid
 class Discount:
     def __init__(self, discount_type: str, value: float):
         self.discount_id = str(uuid.uuid4())

@@ -13,6 +13,7 @@ from discount import Discount
 from payment import Payment
 from delivery import Delivery
 from user import User
+import uuid
 class EStore:
     _instance = None
 

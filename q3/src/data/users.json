@@ -66,6 +66,18 @@
         "order_history": [],
         "store_name": "chatbhandar",
         "business_id": "6ac25030-f39a-4fe9-816c-1f8de1b1246a"
+    },
+    {
+        "user_id": "af8ee9f7-a0a8-4337-890b-df8b2dd8e24f",
+        "name": "a",
+        "email": "a",
+        "password": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+        "type": "Customer",
+        "order_history": [
+            "af81acbd-26cf-4e4d-bd70-e7677328eb89",
+            "b617a5a8-ca55-4763-86d5-069f9e9ccc7f",
+            "b1df1d95-e395-4de7-9563-a9a53c99ab77",
+            "d2850c21-f390-4f19-bf90-46aa64c294db"
+        ]
     }
- 
 ]

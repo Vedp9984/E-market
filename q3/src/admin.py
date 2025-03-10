@@ -16,7 +16,8 @@ class Admin(User):
             print("No orders available.")
             return
 
-        print("\n==== All Orders ====")
+        # The test specifically expects this exact string with the newline at the beginning
+        print("==== All Orders ====")
         for order in orders:
             print(f"Order ID: {order.order_id}")
             print(f"Customer: {order.customer.name}")
@@ -40,10 +41,11 @@ class Admin(User):
         if not retail_stores:
             print("No retail stores available.")
             return
-
-        print("\n==== All Retail Stores ====")
+            
+        # The test specifically expects this exact string with the newline at the beginning
+        print("==== All Retail Stores ====")
         for store in retail_stores:
-            print(f"Store ID: {store.business_id}")
-            print(f"Name: {store.store_name}")
-            print(f"Owner: {store.name}")
+            print(f"Store ID: {store.user_id}")
+            print(f"Name: {store.name}")
+            print(f"Email: {store.email}")
             print("------------------------")

@@ -55,6 +55,13 @@
       "password": "1234",
       "role": "delivery_agent",
       "name": "sajiv singh"
+    },
+    "a": {
+      "id": "23937a78-2afc-49eb-80ed-486079052ac8",
+      "username": "a",
+      "password": "a",
+      "role": "customer",
+      "name": "a"
     }
   },
   "menu_items": {
@@ -134,6 +141,66 @@
       "estimated_delivery_time": 1741537187.934903,
       "delivery_agent_id": null,
       "total_amount": 21.98
+    },
+    "d305985c-290e-442c-a5a2-88e19f22bfc1": {
+      "id": "d305985c-290e-442c-a5a2-88e19f22bfc1",
+      "customer_id": "23937a78-2afc-49eb-80ed-486079052ac8",
+      "items": [
+        {
+          "item_id": "aed84555-bd1c-42a2-b750-cc0cb9ba7597",
+          "name": "Chicken Burger",
+          "price": 9.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "takeaway",
+      "delivery_address": null,
+      "status": "placed",
+      "created_at": "2025-03-10T15:53:58.587325",
+      "updated_at": "2025-03-10T15:53:58.587325",
+      "estimated_delivery_time": 1741603018.587387,
+      "delivery_agent_id": null,
+      "total_amount": 9.99
+    },
+    "c8432bb2-c25c-42e5-97bb-09019184e89d": {
+      "id": "c8432bb2-c25c-42e5-97bb-09019184e89d",
+      "customer_id": "23937a78-2afc-49eb-80ed-486079052ac8",
+      "items": [
+        {
+          "item_id": "2ff7f9b4-b39c-4e19-b9ae-bd96a1ec1b0c",
+          "name": "Chocolate Brownie",
+          "price": 6.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "IIIT H",
+      "status": "placed",
+      "created_at": "2025-03-10T15:55:08.896390",
+      "updated_at": "2025-03-10T15:55:08.896390",
+      "estimated_delivery_time": 1741605908.896439,
+      "delivery_agent_id": "9adbe745-7f68-4ad3-a63b-2a91e02f4ebd",
+      "total_amount": 6.99
+    },
+    "0d4038e3-99c5-4aef-9230-9d5dac89bdd2": {
+      "id": "0d4038e3-99c5-4aef-9230-9d5dac89bdd2",
+      "customer_id": "23937a78-2afc-49eb-80ed-486079052ac8",
+      "items": [
+        {
+          "item_id": "2ff7f9b4-b39c-4e19-b9ae-bd96a1ec1b0c",
+          "name": "Chocolate Brownie",
+          "price": 6.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "11",
+      "status": "placed",
+      "created_at": "2025-03-10T15:57:43.827784",
+      "updated_at": "2025-03-10T15:57:43.827784",
+      "estimated_delivery_time": 1741604503.827843,
+      "delivery_agent_id": null,
+      "total_amount": 6.99
     }
   },
   "delivery_agents": {
@@ -146,8 +213,8 @@
     "9adbe745-7f68-4ad3-a63b-2a91e02f4ebd": {
       "id": "9adbe745-7f68-4ad3-a63b-2a91e02f4ebd",
       "name": "sajiv singh",
-      "status": "available",
-      "current_order": null
+      "status": "busy",
+      "current_order": "c8432bb2-c25c-42e5-97bb-09019184e89d"
     }
   }
 }

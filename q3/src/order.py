@@ -2,6 +2,7 @@ from typing import List, Dict
 from customer import Customer
 import uuid
 import datetime
+
 class Order:
     def __init__(self, customer: Customer, items: List[Dict], payment_method: str):
         self.order_id = str(uuid.uuid4())
@@ -9,15 +10,18 @@ class Order:
         self.items = items  # List of dicts with product_id and quantity
         self.payment_method = payment_method
         self.status = "Pending"
-        self.total_price = self.calculate_total()
         self.date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.discount_applied = None
         self.payment = None
+        
         self.delivery = None
+        
+        # Get e_store instance for calculation
+        from estore import EStore
+        self.total_price = self.calculate_total(EStore.get_instance())
     
-    def calculate_total(self) -> float:
+    def calculate_total(self, e_store) -> float:
         """Calculate total price for order"""
-        e_store = EStore.get_instance()
         total = 0.0
         for item in self.items:
             product = e_store.get_product(item["product_id"])

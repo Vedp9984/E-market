@@ -1,0 +1,19 @@
+[
+    {
+        "order_id": "dd706040-73eb-4544-804e-22f7f55195cb",
+        "customer_id": "44311925-7c8a-4530-aeca-8ff3b7bfc91d",
+        "items": [
+            {
+                "product_id": "50cbf7ac-0829-4cba-8db4-d92749c7635e",
+                "quantity": 1
+            }
+        ],
+        "payment_method": "Credit Card",
+        "status": "Confirmed",
+        "total_price": 199.99,
+        "date": "2025-03-10 18:02:51",
+        "discount_applied": null,
+        "payment_id": "a2ae036c-311e-41b7-aa93-d4820fe66d42",
+        "delivery_id": "dd0ad1e0-79d6-4451-b930-6d35056ed622"
+    }
+]

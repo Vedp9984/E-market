@@ -101,7 +101,7 @@ class User:
         user.id = data["id"]
         return user
 
-# User management class
+
 class UserManager:
     def __init__(self):
         self.data_store = DataStore()
@@ -114,7 +114,7 @@ class UserManager:
         new_user = User(username, password, role, name)
         users[username] = new_user.to_dict()
         
-        # If it's a delivery agent, also add to delivery agents list
+    
         if role == UserRole.DELIVERY_AGENT:
             delivery_agents = self.data_store.get_delivery_agents()
             delivery_agents[new_user.id] = {

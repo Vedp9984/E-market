@@ -10,7 +10,7 @@ class Customer(User):
         if not self.is_logged_in:
             print("Please log in to place an order.")
             return None
-
+        from order import Order
         # Validate items are in stock
         for item in items:
             product = e_store.get_product(item["product_id"])
@@ -52,7 +52,7 @@ class Customer(User):
         for order_id in self.order_history:
             order = e_store.get_order(order_id)
             if order:
-                print(f"Order ID: {order.order_id}")
+                print(f"Order ID: {order_id}")
                 print(f"Date: {order.date}")
                 print(f"Status: {order.status}")
                 print(f"Total: ${order.total_price:.2f}")

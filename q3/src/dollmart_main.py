@@ -14,7 +14,6 @@ from admin import Admin
 from delivery import Delivery
 from estore import EStore
 
-# --- CLI Interface ---
 
 class DollMartCLI:
     def __init__(self):
