@@ -346,8 +346,5 @@ The system follows a layered architecture:
 - Limited scalability with file-based storage.
 
 
-
-
-
 # assumption for 3rd question -
 1. I have not implemented concurrent access as it was not mention so I am using json for datastorage

@@ -1,29 +1,37 @@
 [
     {
-        "user_id": "207cf0bb-5808-4f8f-a4b1-85725bd51637",
+        "user_id": "930f4327-2a0d-4ea3-95d9-3211965a0145",
         "name": "Admin",
         "email": "admin@dollmart.com",
         "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
         "type": "Admin"
     },
     {
-        "user_id": "44311925-7c8a-4530-aeca-8ff3b7bfc91d",
+        "user_id": "0bfefed1-652c-43cb-ab10-a7221026884a",
         "name": "Test Customer",
         "email": "customer@test.com",
         "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
         "type": "Customer",
         "order_history": [
-            "dd706040-73eb-4544-804e-22f7f55195cb"
+            "02c81dc1-825a-4d93-a380-9dedc2369bad"
         ]
     },
     {
-        "user_id": "e40661d4-7c4b-4828-a7b1-160e127c80ee",
+        "user_id": "0b32f92a-0d67-49d9-b04f-8d2a082a7a40",
         "name": "Test Store Owner",
         "email": "store@test.com",
         "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
         "type": "RetailStore",
         "order_history": [],
         "store_name": "Test Store",
-        "business_id": "cc0d21c1-9f8e-4e70-909d-bb6ed5a6f031"
+        "business_id": "d34d8b76-59e4-47ad-816f-c5cd8fbb1fb5"
+    },
+    {
+        "user_id": "c2be88d1-8ad3-46e0-b003-c2d9147fff0a",
+        "name": "Customer 2",
+        "email": "customer2@test.com",
+        "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+        "type": "Customer",
+        "order_history": []
     }
 ]

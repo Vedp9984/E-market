@@ -6,7 +6,6 @@ import uuid
 from datetime import datetime, timedelta
 from unittest.mock import patch, MagicMock
 
-
 src_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src')
 sys.path.insert(0, src_dir)
 
@@ -1128,6 +1127,255 @@ class TestEStore:
         assert product == self.product1
         assert self.e_store.get_product("nonexistent") is None
 
+#
+class TestProductEdgeCases:
+    def test_product_zero_price(self):
+        """Test product with zero price"""
+        product = Product("Free Item", "Promotions", 0.0, 10)
+        assert product.price == 0.0
+        
+        # Test applying discount to zero price
+        discounted = product.apply_discount(0.1)
+        assert discounted == 0.0
+    
+    def test_product_negative_price(self):
+        """Test product with negative price (should not be allowed in a real system)"""
+        # In a real system, you would validate this input
+        product = Product("Error Item", "Error", -10.0, 10)
+        assert product.price == -10.0
+        
+        # Applying discount to negative price
+        discounted = product.apply_discount(0.1)
+        assert discounted == -9.0  # This is actually a bug in your system!
+    
+    def test_product_update_stock_large_numbers(self):
+        """Test product stock updates with very large numbers"""
+        product = Product("Bulk Item", "Wholesale", 1.0, 100)
+        
+        # Large increase
+        product.update_stock(1000000)
+        assert product.stock == 1000100
+        
+        # Large decrease but not below zero
+        product.update_stock(-500000)
+        assert product.stock == 500100
+        
+        # Large decrease below zero should result in zero stock
+        product.update_stock(-1000000)
+        assert product.stock == 0
 
+class TestOrderEdgeCases:
+    def test_order_empty_items(self, clean_estore, test_users):
+        """Test creating an order with no items"""
+        estore = clean_estore
+        customer = test_users["customer"]
+        
+        # Create an order with empty items list
+        items = []
+        order = Order(customer, items, "Credit Card")
+        
+        assert order.items == []
+        assert order.total_price == 0.0
+    
+    def test_order_non_existent_product(self, clean_estore, test_users):
+        """Test order with non-existent product ID"""
+        estore = clean_estore
+        customer = test_users["customer"]
+        
+        # Create an order with a non-existent product ID
+        items = [{"product_id": "non-existent-id", "quantity": 1}]
+        order = Order(customer, items, "Credit Card")
+        
+        # Total price should be 0 as the product doesn't exist
+        assert order.total_price == 0.0
+    
+    def test_order_zero_quantity(self, clean_estore, test_users, test_products):
+        """Test order with zero quantity"""
+        estore = clean_estore
+        customer = test_users["customer"]
+        products = test_products
+        
+        # Create an order with zero quantity
+        items = [{"product_id": products[0].product_id, "quantity": 0}]
+        order = Order(customer, items, "Credit Card")
+        
+        # Total price should be 0 as quantity is 0
+        assert order.total_price == 0.0
+    
+    def test_order_negative_quantity(self, clean_estore, test_users, test_products):
+        """Test order with negative quantity (should not be allowed in a real system)"""
+        estore = clean_estore
+        customer = test_users["customer"]
+        products = test_products
+        
+        # Create an order with negative quantity
+        items = [{"product_id": products[0].product_id, "quantity": -1}]
+        order = Order(customer, items, "Credit Card")
+        
+        # In a robust system, this would be validated, but currently it results in negative price
+        assert order.total_price == -products[0].price  # This is a bug in your system!
+
+class TestDiscountEdgeCases:
+    def test_discount_negative_percentage(self):
+        """Test discount with negative percentage (should increase price)"""
+        discount = Discount("percentage", -0.2)  # -20% discount (actually a markup)
+        original_price = 100
+        
+        discounted_price = discount.apply_discount(original_price)
+        assert discounted_price == 120  # Price increased by 20%
+    
+    
+    def test_discount_negative_fixed(self):
+        """Test negative fixed discount (should increase price)"""
+        discount = Discount("fixed", -20)  # -$20 discount (actually a markup)
+        original_price = 100
+        
+        discounted_price = discount.apply_discount(original_price)
+        assert discounted_price == 120  # Price increased by $20
+    
+    def test_discount_zero_price(self):
+        """Test applying discount to zero price"""
+        discount_percent = Discount("percentage", 0.2)
+        discount_fixed = Discount("fixed", 10)
+        
+        assert discount_percent.apply_discount(0) == 0
+        assert discount_fixed.apply_discount(0) == 0
+
+class TestPaymentEdgeCases:
+    def test_payment_with_invalid_method(self):
+        """Test payment with invalid payment method"""
+        order_id = str(uuid.uuid4())
+        payment = Payment(order_id, "Bitcoin")  # Assuming system doesn't support Bitcoin
+        
+        # System should still process it (in your current implementation)
+        with patch('builtins.print'):
+            result = payment.process_payment()
+        
+        assert result == True  # Current implementation always returns True
+        assert payment.status == "Completed"
+    
+    def test_payment_empty_method(self):
+        """Test payment with empty method"""
+        order_id = str(uuid.uuid4())
+        payment = Payment(order_id, "")
+        
+        with patch('builtins.print'):
+            result = payment.process_payment()
+        
+        assert result == True
+        assert payment.status == "Completed"
+
+class TestDeliveryEdgeCases:
+    def test_delivery_past_date(self):
+        """Test delivery with a past date"""
+        order_id = str(uuid.uuid4())
+        past_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
+        delivery = Delivery(order_id, past_date)
+        
+        assert delivery.expected_date == past_date
+        # System doesn't validate if the date is in the past
+    
+    def test_delivery_invalid_date_format(self):
+        """Test delivery with invalid date format"""
+        order_id = str(uuid.uuid4())
+        invalid_date = "Not a date"
+        
+        # System doesn't validate the date format
+        delivery = Delivery(order_id, invalid_date)
+        assert delivery.expected_date == invalid_date
+
+class TestEStoreEdgeCases:
+  
+    
+    def test_store_search_product_case_insensitive(self):
+        """Test product search is case insensitive"""
+        estore = EStore.get_instance()
+        
+        # Clear existing products
+        estore.products = []
+        
+        # Add product
+        product = Product("TeSt PrOdUcT", "TeStCaTeGoRy", 10.0, 10)
+        estore.add_product(product)
+        
+        # Search with different cases
+        results1 = estore.search_product("test")
+        results2 = estore.search_product("TEST")
+        results3 = estore.search_product("category")
+        
+        assert len(results1) == 1
+        assert len(results2) == 1
+        assert len(results3) == 1
+        assert results1[0] == product
+    
+    def test_store_get_user_nonexistent(self):
+        """Test retrieving a non-existent user"""
+        estore = EStore.get_instance()
+        user = estore.get_user("nonexistent@example.com")
+        assert user is None
+
+class TestIntegrationEdgeCases:
+    def test_order_with_out_of_stock_product(self, clean_estore, test_users):
+        """Test placing an order for an out-of-stock product"""
+        estore = clean_estore
+        customer = test_users["customer"]
+        customer.login("password123")
+        
+        # Create a product with zero stock
+        out_of_stock = Product("Out of Stock", "Electronics", 99.99, 0)
+        estore.add_product(out_of_stock)
+        
+        # Try to place order
+        items = [{"product_id": out_of_stock.product_id, "quantity": 1}]
+        order = customer.place_order(estore, items, "Credit Card")
+        
+        # Order should not be placed
+        assert order is None
+        assert len(customer.order_history) == 0
+    
+    def test_multiple_users_same_email(self, clean_estore):
+        """Test adding multiple users with the same email"""
+        estore = clean_estore
+        
+        # Add first user
+        user1 = Customer("User 1", "duplicate@example.com", "password1")
+        estore.add_user(user1)
+        
+        # Add second user with same email
+        user2 = Customer("User 2", "duplicate@example.com", "password2")
+        estore.add_user(user2)
+        
+        # Check that the get_user method returns the first matching user
+        retrieved = estore.get_user("duplicate@example.com")
+        assert retrieved is not None
+        # This is implementation specific - you might actually get either user1 or user2
+        # depending on how get_user is implemented
+    
+    def test_simultaneous_orders_same_product(self, clean_estore, test_users):
+        """Test placing multiple orders for the same product at the same time"""
+        estore = clean_estore
+        customer1 = test_users["customer"]
+        
+        # Create a second customer
+        customer2 = Customer("Customer 2", "customer2@test.com", "password123")
+        estore.add_user(customer2)
+        
+        # Create a product with limited stock
+        limited_stock = Product("Limited Stock", "Electronics", 99.99, 2)
+        estore.add_product(limited_stock)
+        
+        # Both customers log in
+        customer1.login("password123")
+        customer2.login("password123")
+        
+        # Both try to order the product
+        items = [{"product_id": limited_stock.product_id, "quantity": 2}]
+        order1 = customer1.place_order(estore, items, "Credit Card")
+        order2 = customer2.place_order(estore, items, "PayPal")
+        
+        # First order should succeed, second should fail due to insufficient stock
+        assert order1 is not None
+        assert order2 is None
+        assert limited_stock.stock == 0
 if __name__ == "__main__":
     pytest.main(["-v"])

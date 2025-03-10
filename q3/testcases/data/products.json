@@ -1,16 +1,9 @@
 [
     {
-        "product_id": "e71d077f-d719-499b-9dcd-7b47203f9f96",
-        "name": "Teddy Bear",
+        "product_id": "82144489-0687-426e-9b74-6893de358b2d",
+        "name": "Limited Stock",
         "category": "Electronics",
-        "price": 19.99,
-        "stock": 50
-    },
-    {
-        "product_id": "16664fce-2820-4f95-a3b8-9d7bba916da2",
-        "name": "Doll",
-        "category": "Clothing",
-        "price": 24.99,
-        "stock": 30
+        "price": 99.99,
+        "stock": 0
     }
 ]
