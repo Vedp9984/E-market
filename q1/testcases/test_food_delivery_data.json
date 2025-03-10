@@ -1,0 +1,690 @@
+{
+  "users": {
+    "test_customer": {
+      "id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "username": "test_customer",
+      "password": "password",
+      "role": "customer",
+      "name": "Test Customer"
+    },
+    "test_manager": {
+      "id": "63c8ebbb-80cf-48b8-a672-040a812e4739",
+      "username": "test_manager",
+      "password": "password",
+      "role": "restaurant_manager",
+      "name": "Test Manager"
+    },
+    "test_agent": {
+      "id": "bfd0ceb4-7f02-4b63-acd3-0a63b51e3171",
+      "username": "test_agent",
+      "password": "password",
+      "role": "delivery_agent",
+      "name": "Test Agent"
+    },
+    "test_admin": {
+      "id": "af0243ca-59eb-456b-b7e2-4a9b33cff50a",
+      "username": "test_admin",
+      "password": "password",
+      "role": "admin",
+      "name": "Test Admin"
+    },
+    "test_agent2": {
+      "id": "30c97fa8-abe7-4f89-a90e-4c6008732b76",
+      "username": "test_agent2",
+      "password": "password",
+      "role": "delivery_agent",
+      "name": "Test Agent 2"
+    },
+    "test_agent1": {
+      "id": "e78fdf48-a30f-40cc-a236-ff60197d2511",
+      "username": "test_agent1",
+      "password": "password",
+      "role": "delivery_agent",
+      "name": "Agent 1"
+    },
+    "special_user": {
+      "id": "db3f7002-ba85-4c8d-98d4-afa7ffa5fa0f",
+      "username": "special_user",
+      "password": "password",
+      "role": "customer",
+      "name": "T\u00e9st N\u00e5m\u00e9 with Sp\u00e9ci\u00e5l Ch\u00e5r\u00e5ct\u00e9rs &*%!"
+    },
+    "new_user": {
+      "id": "2438b7a4-b21d-4c5a-afc5-950afb12076f",
+      "username": "new_user",
+      "password": "password",
+      "role": "customer",
+      "name": "New User"
+    },
+    "new_agent": {
+      "id": "91dd126f-79d7-46e6-886c-8983953cf9dc",
+      "username": "new_agent",
+      "password": "password",
+      "role": "delivery_agent",
+      "name": "New Agent"
+    }
+  },
+  "menu_items": {
+    "a158fd03-0067-4e98-9c13-c7e5fc976b6b": {
+      "id": "a158fd03-0067-4e98-9c13-c7e5fc976b6b",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "5a2840b8-4866-459d-affd-d39daaf07d11": {
+      "id": "5a2840b8-4866-459d-affd-d39daaf07d11",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "1e334b34-c5db-462f-80d6-38b578ed4e7e": {
+      "id": "1e334b34-c5db-462f-80d6-38b578ed4e7e",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "4e9caf39-4b42-4e49-984f-1dc9f550f40f": {
+      "id": "4e9caf39-4b42-4e49-984f-1dc9f550f40f",
+      "name": "New Dish",
+      "description": "A new test dish",
+      "price": 14.99,
+      "category": "Main"
+    },
+    "31a6d3f9-bee3-4666-a5f2-5625b4d5d267": {
+      "id": "31a6d3f9-bee3-4666-a5f2-5625b4d5d267",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "7f26d48c-f6ae-4c31-a3df-3b5fb556d5b1": {
+      "id": "7f26d48c-f6ae-4c31-a3df-3b5fb556d5b1",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "eee70af7-56fe-4081-b7e3-61042a4bf6e5": {
+      "id": "eee70af7-56fe-4081-b7e3-61042a4bf6e5",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "217c625e-52c5-46a3-bab9-f45de07b203b": {
+      "id": "217c625e-52c5-46a3-bab9-f45de07b203b",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "b2bd2304-8b08-423c-b7ec-6fd1e918648f": {
+      "id": "b2bd2304-8b08-423c-b7ec-6fd1e918648f",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "f43fe1ca-42d6-45bd-a3c3-0e118e170851": {
+      "id": "f43fe1ca-42d6-45bd-a3c3-0e118e170851",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "7473470c-6b4e-4f70-adc1-5d79076f42aa": {
+      "id": "7473470c-6b4e-4f70-adc1-5d79076f42aa",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "283d3fb8-f18d-423f-85e3-1e8e47a76cb5": {
+      "id": "283d3fb8-f18d-423f-85e3-1e8e47a76cb5",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "bff44349-ea36-463c-848e-55e25f44f0af": {
+      "id": "bff44349-ea36-463c-848e-55e25f44f0af",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "841b78ed-5425-4b6f-8cee-870016d133a4": {
+      "id": "841b78ed-5425-4b6f-8cee-870016d133a4",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "296e2fb7-74f3-493e-981f-d1c90665ffec": {
+      "id": "296e2fb7-74f3-493e-981f-d1c90665ffec",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "f387361e-0fe2-4ddb-8572-15d59a83be2c": {
+      "id": "f387361e-0fe2-4ddb-8572-15d59a83be2c",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "f86eb721-8410-4755-87fb-69ee5d140ffa": {
+      "id": "f86eb721-8410-4755-87fb-69ee5d140ffa",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "84588109-0e01-47a7-802a-4cebb6029b9b": {
+      "id": "84588109-0e01-47a7-802a-4cebb6029b9b",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "83bc7834-9c6e-45bd-bfac-9d794f8868f9": {
+      "id": "83bc7834-9c6e-45bd-bfac-9d794f8868f9",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "5cf70225-a6c2-408e-8db7-4a08b87f545e": {
+      "id": "5cf70225-a6c2-408e-8db7-4a08b87f545e",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "0dd4554d-52a0-4b70-9075-7d61f27d87ef": {
+      "id": "0dd4554d-52a0-4b70-9075-7d61f27d87ef",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "fc4b67c9-f26d-4cee-8a8d-4193b67164be": {
+      "id": "fc4b67c9-f26d-4cee-8a8d-4193b67164be",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "e5cf73fa-3754-4d1a-b2d5-2a3f5d49a089": {
+      "id": "e5cf73fa-3754-4d1a-b2d5-2a3f5d49a089",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "ec0a924d-14f9-4bf7-bfeb-29014718307a": {
+      "id": "ec0a924d-14f9-4bf7-bfeb-29014718307a",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "7f6d606e-6115-4a4c-b0e7-07c117a9fcf9": {
+      "id": "7f6d606e-6115-4a4c-b0e7-07c117a9fcf9",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "ba0e90e0-8c44-4b71-b4d0-6e32bcbb8289": {
+      "id": "ba0e90e0-8c44-4b71-b4d0-6e32bcbb8289",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "767e6b39-1c10-41d7-b9f8-3f9442653000": {
+      "id": "767e6b39-1c10-41d7-b9f8-3f9442653000",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "42c2990f-9196-4756-9569-7eff18523024": {
+      "id": "42c2990f-9196-4756-9569-7eff18523024",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "a734effe-1df4-4026-a18b-a6c8adbc0759": {
+      "id": "a734effe-1df4-4026-a18b-a6c8adbc0759",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "a35ebfa4-1e50-4095-ab84-45a8a4df216e": {
+      "id": "a35ebfa4-1e50-4095-ab84-45a8a4df216e",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "2606772b-4c3a-4f9e-a7b7-43d0d7a86173": {
+      "id": "2606772b-4c3a-4f9e-a7b7-43d0d7a86173",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "ebbb09f5-5df3-4a04-8e86-9401a1bffcb7": {
+      "id": "ebbb09f5-5df3-4a04-8e86-9401a1bffcb7",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "d37cdb54-0287-4b41-8fb5-2f1e76463c9b": {
+      "id": "d37cdb54-0287-4b41-8fb5-2f1e76463c9b",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "7a8e52e7-a99f-4ca6-9e3e-711bbf299932": {
+      "id": "7a8e52e7-a99f-4ca6-9e3e-711bbf299932",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "9bf52659-f347-48f9-ab7c-37508db6dcff": {
+      "id": "9bf52659-f347-48f9-ab7c-37508db6dcff",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "773e59ec-91ec-4d06-918e-82a77496c690": {
+      "id": "773e59ec-91ec-4d06-918e-82a77496c690",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "2ff5072c-6d1b-4b63-8927-8bf7ce37ba13": {
+      "id": "2ff5072c-6d1b-4b63-8927-8bf7ce37ba13",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "ca44bd89-1e79-4fa9-bab3-2995a76768d4": {
+      "id": "ca44bd89-1e79-4fa9-bab3-2995a76768d4",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "a68e038a-53df-4c90-a3c1-e8c2c8b8c90a": {
+      "id": "a68e038a-53df-4c90-a3c1-e8c2c8b8c90a",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "c6c949b3-c07a-4fa4-ae5c-ac2b7eb55a67": {
+      "id": "c6c949b3-c07a-4fa4-ae5c-ac2b7eb55a67",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "87cffe19-bd0e-418b-be18-451f50a1275b": {
+      "id": "87cffe19-bd0e-418b-be18-451f50a1275b",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "f374e1e4-bd5c-4c7a-936a-f5ec20d8be9b": {
+      "id": "f374e1e4-bd5c-4c7a-936a-f5ec20d8be9b",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "53504c86-2c97-4a07-b3f3-3284f9b2aa31": {
+      "id": "53504c86-2c97-4a07-b3f3-3284f9b2aa31",
+      "name": "Updated Pizza",
+      "description": "Updated description",
+      "price": 15.99,
+      "category": "Pizza"
+    },
+    "18b95eed-46d4-4df4-b723-defb55367447": {
+      "id": "18b95eed-46d4-4df4-b723-defb55367447",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "c28c639d-644b-422d-b68e-e5117757918b": {
+      "id": "c28c639d-644b-422d-b68e-e5117757918b",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "fda6ae7e-49b2-4304-ac46-67adcbc7d65f": {
+      "id": "fda6ae7e-49b2-4304-ac46-67adcbc7d65f",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "8efcab7a-96a7-4134-a8a8-654d52064fcc": {
+      "id": "8efcab7a-96a7-4134-a8a8-654d52064fcc",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "5ded2fc4-b963-48aa-badf-7f7d1a19e7e2": {
+      "id": "5ded2fc4-b963-48aa-badf-7f7d1a19e7e2",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "565f57ff-173b-4055-83ae-aacf5805848c": {
+      "id": "565f57ff-173b-4055-83ae-aacf5805848c",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "90df20e6-4644-4567-817c-33d2afdb627d": {
+      "id": "90df20e6-4644-4567-817c-33d2afdb627d",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "b8938e0f-d6c1-4fad-aed2-aa805f091159": {
+      "id": "b8938e0f-d6c1-4fad-aed2-aa805f091159",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "30e89ac4-4c0f-40a8-8a8b-f3a1e0e34890": {
+      "id": "30e89ac4-4c0f-40a8-8a8b-f3a1e0e34890",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "89814091-a54c-44b9-9f46-011074b41f59": {
+      "id": "89814091-a54c-44b9-9f46-011074b41f59",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "21c4d26c-a7d6-406e-ab59-6c61abe0ddc6": {
+      "id": "21c4d26c-a7d6-406e-ab59-6c61abe0ddc6",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "78775a5f-2c93-4cce-bf90-3eb506884667": {
+      "id": "78775a5f-2c93-4cce-bf90-3eb506884667",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "23050733-694f-4d41-a2a9-6102203ec2e4": {
+      "id": "23050733-694f-4d41-a2a9-6102203ec2e4",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "5d84a90b-616c-4dff-8a11-149cdf31685a": {
+      "id": "5d84a90b-616c-4dff-8a11-149cdf31685a",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    },
+    "e9054c3e-5a63-4b50-a879-f855047ac75d": {
+      "id": "e9054c3e-5a63-4b50-a879-f855047ac75d",
+      "name": "Test Pizza",
+      "description": "Delicious test pizza",
+      "price": 12.99,
+      "category": "Pizza"
+    },
+    "2f14598c-a597-4a6e-ae19-39d76a9bb0af": {
+      "id": "2f14598c-a597-4a6e-ae19-39d76a9bb0af",
+      "name": "Test Burger",
+      "description": "Juicy test burger",
+      "price": 8.99,
+      "category": "Burger"
+    },
+    "1756c633-fb09-4b37-afc8-fedeabec005e": {
+      "id": "1756c633-fb09-4b37-afc8-fedeabec005e",
+      "name": "Test Dessert",
+      "description": "Sweet test dessert",
+      "price": 5.99,
+      "category": "Dessert"
+    }
+  },
+  "orders": {
+    "69afb38b-3781-498f-8cbc-2c7bb8c1cd12": {
+      "id": "69afb38b-3781-498f-8cbc-2c7bb8c1cd12",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "841b78ed-5425-4b6f-8cee-870016d133a4",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "placed",
+      "created_at": "2025-03-10T03:24:26.822291",
+      "updated_at": "2025-03-10T03:24:26.822291",
+      "estimated_delivery_time": 1741559486.822298,
+      "delivery_agent_id": null,
+      "total_amount": 12.99
+    },
+    "37bde3a8-aaee-48eb-b126-3dd2fbf40e4d": {
+      "id": "37bde3a8-aaee-48eb-b126-3dd2fbf40e4d",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "296e2fb7-74f3-493e-981f-d1c90665ffec",
+          "name": "Test Burger",
+          "price": 8.99,
+          "quantity": 2
+        }
+      ],
+      "order_type": "takeaway",
+      "delivery_address": null,
+      "status": "placed",
+      "created_at": "2025-03-10T03:24:26.822498",
+      "updated_at": "2025-03-10T03:24:26.822498",
+      "estimated_delivery_time": 1741558586.822502,
+      "delivery_agent_id": null,
+      "total_amount": 17.98
+    },
+    "c2460faf-3a28-4e38-9dd3-ef7948a084a4": {
+      "id": "c2460faf-3a28-4e38-9dd3-ef7948a084a4",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "5cf70225-a6c2-408e-8db7-4a08b87f545e",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "placed",
+      "created_at": "2025-03-10T03:24:26.824846",
+      "updated_at": "2025-03-10T03:24:26.824846",
+      "estimated_delivery_time": 1741559486.824853,
+      "delivery_agent_id": null,
+      "total_amount": 12.99
+    },
+    "f4fb13d2-876b-401d-bb2e-4e6a5f360679": {
+      "id": "f4fb13d2-876b-401d-bb2e-4e6a5f360679",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "e5cf73fa-3754-4d1a-b2d5-2a3f5d49a089",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "placed",
+      "created_at": "2025-03-10T03:24:26.826287",
+      "updated_at": "2025-03-10T03:24:26.826287",
+      "estimated_delivery_time": 1741561526.826296,
+      "delivery_agent_id": null,
+      "total_amount": 12.99
+    },
+    "6f3b4df8-b287-4043-b1d9-afad0e753282": {
+      "id": "6f3b4df8-b287-4043-b1d9-afad0e753282",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "ba0e90e0-8c44-4b71-b4d0-6e32bcbb8289",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "delivered",
+      "created_at": "2025-03-10T03:24:26.828111",
+      "updated_at": "2025-03-10T03:24:26.828737",
+      "estimated_delivery_time": 1741560206.828121,
+      "delivery_agent_id": "bfd0ceb4-7f02-4b63-acd3-0a63b51e3171",
+      "total_amount": 12.99
+    },
+    "7e0188a9-23a1-4b9d-b51c-5a3da3c0c03c": {
+      "id": "7e0188a9-23a1-4b9d-b51c-5a3da3c0c03c",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "a734effe-1df4-4026-a18b-a6c8adbc0759",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "cancelled",
+      "created_at": "2025-03-10T03:24:26.830520",
+      "updated_at": "2025-03-10T03:24:26.830855",
+      "estimated_delivery_time": 1741559246.830532,
+      "delivery_agent_id": null,
+      "total_amount": 12.99
+    },
+    "b62c5ce3-bf37-46db-8899-ece2beb97c5d": {
+      "id": "b62c5ce3-bf37-46db-8899-ece2beb97c5d",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "placed",
+      "created_at": "2025-03-10T03:24:26.832810",
+      "updated_at": "2025-03-10T03:24:26.832810",
+      "estimated_delivery_time": 1741560566.83282,
+      "delivery_agent_id": null,
+      "total_amount": 0
+    },
+    "c2a9eb77-ca65-4155-92a3-a053aa316896": {
+      "id": "c2a9eb77-ca65-4155-92a3-a053aa316896",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "9bf52659-f347-48f9-ab7c-37508db6dcff",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1000
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "placed",
+      "created_at": "2025-03-10T03:24:26.834708",
+      "updated_at": "2025-03-10T03:24:26.834708",
+      "estimated_delivery_time": 1741560326.834716,
+      "delivery_agent_id": null,
+      "total_amount": 12990.0
+    },
+    "d1f86f46-5620-4191-8ace-29bd9b7970a1": {
+      "id": "d1f86f46-5620-4191-8ace-29bd9b7970a1",
+      "customer_id": "3e30480e-5c47-4979-8bf9-eb44286fe017",
+      "items": [
+        {
+          "item_id": "565f57ff-173b-4055-83ae-aacf5805848c",
+          "name": "Test Pizza",
+          "price": 12.99,
+          "quantity": 1
+        }
+      ],
+      "order_type": "delivery",
+      "delivery_address": "123 Test St",
+      "status": "out_for_delivery",
+      "created_at": "2025-03-10T03:24:26.844594",
+      "updated_at": "2025-03-10T03:24:26.845559",
+      "estimated_delivery_time": 1741560566.84461,
+      "delivery_agent_id": "bfd0ceb4-7f02-4b63-acd3-0a63b51e3171",
+      "total_amount": 12.99
+    }
+  },
+  "delivery_agents": {
+    "bfd0ceb4-7f02-4b63-acd3-0a63b51e3171": {
+      "id": "bfd0ceb4-7f02-4b63-acd3-0a63b51e3171",
+      "name": "Test Agent",
+      "status": "busy",
+      "current_order": "d1f86f46-5620-4191-8ace-29bd9b7970a1"
+    },
+    "30c97fa8-abe7-4f89-a90e-4c6008732b76": {
+      "id": "30c97fa8-abe7-4f89-a90e-4c6008732b76",
+      "name": "Test Agent 2",
+      "status": "busy",
+      "current_order": "b08a4cfe-f8f1-43ad-9c9d-22c88091eebd"
+    },
+    "e78fdf48-a30f-40cc-a236-ff60197d2511": {
+      "id": "e78fdf48-a30f-40cc-a236-ff60197d2511",
+      "name": "Agent 1",
+      "status": "available",
+      "current_order": null
+    },
+    "91dd126f-79d7-46e6-886c-8983953cf9dc": {
+      "id": "91dd126f-79d7-46e6-886c-8983953cf9dc",
+      "name": "New Agent",
+      "status": "available",
+      "current_order": null
+    }
+  }
+}
