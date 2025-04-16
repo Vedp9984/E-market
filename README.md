@@ -382,11 +382,11 @@ UUID: Used for generating untique identifie rs for oentities.
 Enum: Used for clear representation of states and types (OrderStahtus, UserRoloe).
 
 ### how to run 
-# q1
+
  python src/app.py
  python testcases/test.py
 
- # q2
+
  python gobblet.py
 
  # q3
